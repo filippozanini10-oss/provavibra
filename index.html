@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VIBRA CALCIO SPLASH 2027 — AREA STAFF</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div id="login" class="login">
+  <div class="loginbox"><h1>⚽ VIBRA CALCIO SPLASH 2027</h1><h3>AREA STAFF</h3>
+  <input id="password" type="password" placeholder="🔑 Password">
+  <input id="staffLogin" placeholder="Nome staff (es. Mario)">
+  <button onclick="login()">ACCEDI</button><p id="loginMsg"></p>
+  <small>Password iniziale: <b>vibra2027</b></small></div>
+</div>
+
+<div id="app" hidden>
+<header><div><b>⚽ VIBRA CALCIO SPLASH 2027</b><span id="dayBadge"></span></div>
+<button class="dark" onclick="logout()">ESCI</button></header>
+<div class="layout">
+<aside>
+<button onclick="show('dashboard')">🏠 Dashboard</button>
+<button onclick="show('days')">📅 Giornate</button>
+<button onclick="show('teams')">👥 Squadre</button>
+<button onclick="show('players')">🧑 Giocatori</button>
+<button onclick="show('matches')">⚽ Partite</button>
+<button onclick="show('tournament')">🏆 Torneo</button>
+<button onclick="show('fields')">🏟️ Campi</button>
+<button onclick="show('events')">🚨 Eventi</button>
+<button onclick="show('stats')">📊 Statistiche</button>
+<button onclick="show('logs')">📋 Registro modifiche</button>
+<button onclick="show('settings')">⚙️ Impostazioni</button>
+</aside>
+<main id="content"></main>
+</div>
+</div>
+<script src="/static/app.js"></script>
+</body></html>
